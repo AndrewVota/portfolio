@@ -1,0 +1,43 @@
+---
+const BASE_PATH = "/";
+const ABOUT_PATH = "/about/";
+const PROJECTS_PATH = "/projects/";
+const WORK_PATH = "/work/";
+const THOUGHTS_PATH = "/thoughts/";
+
+const isHome = Astro.url.pathname === BASE_PATH;
+const isAbout = Astro.url.pathname === ABOUT_PATH;
+const isProjects = Astro.url.pathname === PROJECTS_PATH;
+const isWork = Astro.url.pathname === WORK_PATH;
+const isThoughts = Astro.url.pathname === THOUGHTS_PATH;
+---
+
+<nav>
+	<ul
+		class="inline-flex section-padding gap-6 font-light text-text-color-unfocused"
+	>
+		<li class={`${isHome ? "font-medium text-text-color" : ""}`}>
+			<a href={BASE_PATH}>home</a>
+		</li>
+		<li class={`${isAbout ? "font-medium text-text-color" : ""}`}>
+			<a href={ABOUT_PATH}>about</a>
+		</li>
+		<li class={`${isProjects ? "font-medium text-text-color" : ""}`}>
+			<a href={PROJECTS_PATH}>projects</a>
+		</li>
+		<li
+			class={`line-through ${
+				isWork ? "font-medium text-text-color" : ""
+			}`}
+		>
+			work
+		</li>
+		<li
+			class={`line-through ${
+				isThoughts ? "font-medium text-text-color" : ""
+			}`}
+		>
+			thoughts
+		</li>
+	</ul>
+</nav>

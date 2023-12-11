@@ -1,0 +1,23 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import "../global.css";
+import Navigation from "../components/Navigation.astro";
+
+const title: string = Astro.props.title || "Andrew Vota";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<div class="max-w-[800px] flex flex-col w-full">
+			<Navigation />
+			<slot />
+		</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+---
+import ProjectItem from "../components/ProjectItem.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Andrew's Projects">
+	<div class="section-padding flex flex-col gap-4">
+		<ProjectItem
+			title="Scrying Glass"
+			description="Capture a photo of any Magic: The Gathering card, and Scrying Glass will swiftly analyze and identify the card, granting you instant access to a wealth of related information."
+			keywords={["Python", "OpenCV", "Docker", "Flask"]}
+			link="https://github.com/AndrewVota/scryingglass-api"
+		/>
+
+		<ProjectItem
+			title="RSS Discord Bot"
+			description="A Discord bot that allows users to subscribe to RSS feeds and receive updates in their Discord server."
+			keywords={["Typescript", "Javascript", "PostgreSQL", "Docker"]}
+			link="https://github.com/AndrewVota/rssbot"
+		/>
+
+		<ProjectItem
+			title="Personal Website (You're Here!)"
+			description="My personal website, where I share my projects, show my freelance work to prospective clients, and blog about my learnings."
+			keywords={["HTML/CSS/JS", "Typescript", "Astro", "UnoCSS"]}
+			link="https://github.com/AndrewVota/portfolio"
+		/>
+	</div>
+</BaseLayout>
