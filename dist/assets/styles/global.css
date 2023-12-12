@@ -1,7 +1,3 @@
-/* Reset */
-
-@import url(sanitize.css);
-
 /* Typefaces */
 
 @font-face {
@@ -41,6 +37,10 @@
 }
 
 /* Globals */
+
+html {
+	scrollbar-gutter: stable;
+}
 
 body {
 	font-family: HelveticaNowText, sans-serif;

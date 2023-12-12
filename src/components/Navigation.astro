@@ -3,13 +3,11 @@ const BASE_PATH = "/";
 const ABOUT_PATH = "/about/";
 const PROJECTS_PATH = "/projects/";
 const WORK_PATH = "/work/";
-const THOUGHTS_PATH = "/thoughts/";
 
 const isHome = Astro.url.pathname === BASE_PATH;
 const isAbout = Astro.url.pathname === ABOUT_PATH;
 const isProjects = Astro.url.pathname === PROJECTS_PATH;
 const isWork = Astro.url.pathname === WORK_PATH;
-const isThoughts = Astro.url.pathname === THOUGHTS_PATH;
 ---
 
 <nav>
@@ -39,13 +37,6 @@ const isThoughts = Astro.url.pathname === THOUGHTS_PATH;
 			class={`text-nowrap ${isWork ? "font-medium text-text-color" : ""}`}
 		>
 			<a href={WORK_PATH}>work</a>
-		</li>
-		<li
-			class={`text-nowrap line-through ${
-				isThoughts ? "font-medium text-text-color" : ""
-			}`}
-		>
-			thoughts
 		</li>
 	</ul>
 </nav>
