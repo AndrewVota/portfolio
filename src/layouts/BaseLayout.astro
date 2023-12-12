@@ -1,26 +1,13 @@
 ---
-import { ViewTransitions } from "astro:transitions";
-import "../global.css";
+import CommonHead from "./CommonHead.astro";
 import Navigation from "../components/Navigation.astro";
 
-const title: string = Astro.props.title || "Andrew Vota";
+const { title = "Andrew Vota" } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Andrew Vota's personal website." />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<title>{title}</title>
-		<ViewTransitions />
+	<CommonHead title={title} />
 
-		<!-- Umami analytics -->
-		<script
-			async
-			src="https://umami-production-8aa6.up.railway.app/script.js"
-			data-website-id="d11b8f8b-a286-4f00-8679-8910dc51f5a1"></script>
-	</head>
 	<body>
 		<div class="max-w-[800px] flex flex-col w-full">
 			<Navigation />

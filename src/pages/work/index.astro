@@ -1,0 +1,16 @@
+---
+import ProjectItem from "../../components/ProjectItem.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Andrew's Work">
+	<div class="section-padding flex flex-col gap-4">
+		<ProjectItem
+			title="Modern Wellness Landing Page"
+			description="A clean, modern, professinal website for a small business."
+			keywords={["Modern", "Natural", "Minimal", "Clean"]}
+			link="/work/modern-wellness-landing-page/"
+			newTab={false}
+		/>
+	</div>
+</BaseLayout>

@@ -25,12 +25,8 @@ const isThoughts = Astro.url.pathname === THOUGHTS_PATH;
 		<li class={`${isProjects ? "font-medium text-text-color" : ""}`}>
 			<a href={PROJECTS_PATH}>projects</a>
 		</li>
-		<li
-			class={`line-through ${
-				isWork ? "font-medium text-text-color" : ""
-			}`}
-		>
-			work
+		<li class={`${isWork ? "font-medium text-text-color" : ""}`}>
+			<a href={WORK_PATH}>work</a>
 		</li>
 		<li
 			class={`line-through ${
