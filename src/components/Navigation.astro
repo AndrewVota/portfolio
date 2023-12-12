@@ -14,22 +14,34 @@ const isThoughts = Astro.url.pathname === THOUGHTS_PATH;
 
 <nav>
 	<ul
-		class="inline-flex section-padding gap-6 font-light text-text-color-unfocused"
+		class="inline-flex flex-wrap section-padding gap-6 font-light text-text-color-unfocused"
 	>
-		<li class={`${isHome ? "font-medium text-text-color" : ""}`}>
+		<li
+			class={`text-nowrap ${isHome ? "font-medium text-text-color" : ""}`}
+		>
 			<a href={BASE_PATH}>home</a>
 		</li>
-		<li class={`${isAbout ? "font-medium text-text-color" : ""}`}>
+		<li
+			class={`text-nowrap ${
+				isAbout ? "font-medium text-text-color" : ""
+			}`}
+		>
 			<a href={ABOUT_PATH}>about</a>
 		</li>
-		<li class={`${isProjects ? "font-medium text-text-color" : ""}`}>
+		<li
+			class={`text-nowrap ${
+				isProjects ? "font-medium text-text-color" : ""
+			}`}
+		>
 			<a href={PROJECTS_PATH}>projects</a>
 		</li>
-		<li class={`${isWork ? "font-medium text-text-color" : ""}`}>
+		<li
+			class={`text-nowrap ${isWork ? "font-medium text-text-color" : ""}`}
+		>
 			<a href={WORK_PATH}>work</a>
 		</li>
 		<li
-			class={`line-through ${
+			class={`text-nowrap line-through ${
 				isThoughts ? "font-medium text-text-color" : ""
 			}`}
 		>

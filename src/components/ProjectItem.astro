@@ -12,10 +12,10 @@ const { newTab = true } = Astro.props;
 	>
 		<h2>{title}</h2>
 		<p class="text-text-color-unfocused">{description}</p>
-		<div class="flex gap-4">
+		<div class="flex flex-wrap gap-4">
 			{
 				keywords.map((keyword: string) => (
-					<span class="subtext text-text-color-unfocused">
+					<span class="text-nowrap subtext text-text-color-unfocused">
 						{keyword}
 					</span>
 				))
