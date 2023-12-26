@@ -5,7 +5,7 @@
 	--background: #f8f8f8;
 	--highlight: #ffffff;
 	--primary: #222222;
-	--text-secondary: #606060;
+	--secondary: #606060;
 }
 
 /* Typefaces */
@@ -46,10 +46,8 @@
 
 @font-face {
 	font-family: "HelveticaNowText";
-	src: url("/fonts/helvetica/HelveticaNowText-ExtraLightItalic.woff2")
-			format("woff2"),
-		url("/fonts/helvetica/HelveticaNowText-ExtraLightItalic.woff")
-			format("woff");
+	src: url("/fonts/helvetica/HelveticaNowText-ExtLtIta.woff2") format("woff2"),
+		url("/fonts/helvetica/HelveticaNowText-ExtLtIta.woff") format("woff");
 	font-weight: 200;
 	font-style: italic;
 	font-display: swap;
@@ -87,10 +85,8 @@
 
 @font-face {
 	font-family: "HelveticaNowText";
-	src: url("/fonts/helvetica/HelveticaNowText-RegularItalic.woff2")
-			format("woff2"),
-		url("/fonts/helvetica/HelveticaNowText-RegularItalic.woff")
-			format("woff");
+	src: url("/fonts/helvetica/HelveticaNowText-RegIta.woff2") format("woff2"),
+		url("/fonts/helvetica/HelveticaNowText-RegIta.woff") format("woff");
 	font-weight: 400;
 	font-style: italic;
 	font-display: swap;
@@ -150,10 +146,8 @@
 
 @font-face {
 	font-family: "HelveticaNowText";
-	src: url("/fonts/helvetica/HelveticaNowText-ExtraBoldItalic.woff2")
-			format("woff2"),
-		url("/fonts/helvetica/HelveticaNowText-ExtraBoldItalic.woff")
-			format("woff");
+	src: url("/fonts/helvetica/HelveticaNowText-ExtBdIta.woff2") format("woff2"),
+		url("/fonts/helvetica/HelveticaNowText-ExtBdIta.woff") format("woff");
 	font-weight: 800;
 	font-style: italic;
 	font-display: swap;

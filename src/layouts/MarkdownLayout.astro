@@ -1,0 +1,46 @@
+---
+import CommonHead from "./CommonHead.astro";
+import Navigation from "../components/Navigation.astro";
+import Links from "../components/Links.astro";
+
+const title: string = Astro.props.frontmatter.title;
+const date: string = Astro.props.frontmatter.date;
+---
+
+<html>
+	<CommonHead />
+	<link rel="stylesheet" href="/styles/markdown.css" />
+
+	<div class="flex w-full px-0 py-36 flex-col items-center">
+		<div class="flex max-w-200 w-full px-8 flex-col gap-12">
+			<Navigation />
+
+			<div
+				class="flex flex-col justify-center items-start gap-4 self-stretch"
+			>
+				<h1 class="self-stretch text-8 font-400">{title}</h1>
+				<span class="text-secondary text-4 font-400">{date}</span>
+			</div>
+
+			<div class="px-8">
+				<slot />
+			</div>
+
+			<div
+				class="flex flex-col justify-center items-start gap-2 self-stretch"
+			>
+				<span class="text-secondary text-4">Andrew<br />{date}</span>
+				<a class="text-4 font-500" href="/thoughts/"
+					>&lt; Read other thoughts</a
+				>
+			</div>
+
+			<Links />
+		</div>
+	</div>
+	<style>
+		h1 {
+			margin: 0;
+		}
+	</style>
+</html>

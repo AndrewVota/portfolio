@@ -1,0 +1,19 @@
+h1 {
+	font-weight: 500;
+	margin-top: 32px;
+	margin-bottom: 16px;
+	font-size: 24px;
+}
+
+h1:first-child {
+	margin-top: 0;
+}
+
+p {
+	line-height: 150%;
+}
+
+a:not(nav a) {
+	color: #fd5602;
+	text-decoration: underline;
+}
