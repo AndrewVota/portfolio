@@ -1,0 +1,53 @@
+---
+import Links from "../components/Links.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+	<div class="flex flex-col justify-center items-start gap-6 self-stretch">
+		<h1 class="font-400 text-8">My projects</h1>
+
+		<ProjectCard
+			title="Orbitar 🏗️"
+			description="Orbitar is a sophisticated web scraping API tailored for streamlined data extraction from diverse websites. It excels in overcoming common scraping hurdles such as proxy rotation, captcha solving, and JavaScript rendering. This tool is engineered for efficiency, helping users gather crucial web data effortlessly."
+			keywords={["Go", "SQLite", "Docker", "NGINX"]}
+			link="https://orbitar.io"
+		/>
+
+		<ProjectCard
+			title="Interpreter in Go 🚧"
+			description="A deep dive into programming language creation, this project involves building a language interpreter for a fictional language 'Monkey' in Go. It's inspired by Thorsten Ball's 'Writing an Interpreter in Go', focusing on core concepts like AST, Lexer, Parser, and Interpreter design."
+			keywords={["Go", "AST", "Lexer", "Parser", "Interpreter"]}
+			link="https://github.com/AndrewVota/go_interpreter"
+		/>
+
+		<ProjectCard
+			title="Personal Website 📌"
+			description="My personal website, where I share my projects, show my freelance work to prospective clients, and blog about my learnings."
+			keywords={["HTML/CSS/JS", "Typescript", "Astro", "NGINX"]}
+			link="https://github.com/AndrewVota/portfolio"
+		/>
+
+		<ProjectCard
+			title="Scrying Glass"
+			description="Scrying Glass is a tool that leverages computer vision to recognize Magic: The Gathering cards from a single photo. This application swiftly identifies cards, linking users to extensive information about each one, showcasing the potential of image processing and data retrieval."
+			keywords={["Python", "OpenCV", "Numpy", "Docker", "FastAPI"]}
+			link="https://github.com/AndrewVota/scryingglass-api"
+		/>
+
+		<ProjectCard
+			title="RSS Discord Bot"
+			description="This project delivers a user-friendly Discord bot that integrates RSS feeds into Discord servers. It enables users to effortlessly subscribe and stay updated with their favorite feeds, showcasing skills in bot development and database management."
+			keywords={["Typescript", "Node.js", "PostgreSQL", "Docker"]}
+			link="https://github.com/AndrewVota/rssbot"
+		/>
+	</div>
+	<Links />
+
+	<style>
+		* {
+			margin: 0;
+		}
+	</style>
+</BaseLayout>

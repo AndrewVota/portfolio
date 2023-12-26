@@ -1,0 +1,35 @@
+---
+const title: string = Astro.props.title;
+const description: string = Astro.props.description;
+const keywords: string[] = Astro.props.keywords;
+const link: string = Astro.props.link;
+---
+
+<a
+	href={link}
+	target="_blank"
+	class="flex max-w-200 px-8 py-6 flex-col justify-center items-start gap-2 self-stretch border-rd-2 hover:bg-highlight"
+>
+	<h2 class="self-stretch text-primary text-5 font-500">
+		{title}
+	</h2>
+
+	<p class="self-stretch text-secondary text-4 font-300 lh-[150%]">
+		{description}
+	</p>
+
+	<div class="flex items-center gap-4">
+		{
+			keywords.map((keyword: string) => (
+				<span class="text-secondary text-3">{keyword}</span>
+			))
+		}
+	</div>
+</a>
+
+<style>
+	h2,
+	p {
+		margin: 0;
+	}
+</style>

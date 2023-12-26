@@ -1,0 +1,30 @@
+@import url("/styles/normalize.css");
+@import url("/styles/variables.css");
+
+body {
+	font-family: "HelveticaNowText";
+	color: var(--primary);
+	background-color: var(--background);
+}
+
+/* Reserve space for scrollbar */
+html {
+	scrollbar-gutter: stable;
+}
+
+/* Reset link styles */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Reset button styles */
+button {
+	background: none; /* Removes default background */
+	color: inherit; /* Inherits text color from parent */
+	border: none; /* Removes default border */
+	padding: 0; /* Removes default padding */
+	font: inherit; /* Inherits font from parent */
+	cursor: pointer; /* Ensures cursor appears as a pointer */
+	outline: inherit; /* Inherits outline style (for accessibility) */
+}

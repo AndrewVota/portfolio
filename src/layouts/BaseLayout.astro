@@ -1,0 +1,15 @@
+---
+import CommonHead from "./CommonHead.astro";
+import Navigation from "../components/Navigation.astro";
+---
+
+<html>
+	<CommonHead />
+
+	<div class="flex w-full px-0 py-36 flex-col items-center">
+		<div class="flex max-w-200 w-full px-8 flex-col gap-12">
+			<Navigation />
+			<slot />
+		</div>
+	</div>
+</html>

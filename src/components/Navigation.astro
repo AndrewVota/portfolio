@@ -1,0 +1,34 @@
+---
+const BASE_PATH = "/";
+const ABOUT_PATH = "/about/";
+const PROJECTS_PATH = "/projects/";
+const THOUGHTS_PATH = "/thoughts/";
+
+const isBase = Astro.url.pathname === BASE_PATH;
+const isAbout = Astro.url.pathname === ABOUT_PATH;
+const isProjects = Astro.url.pathname === PROJECTS_PATH;
+const isThoughts = Astro.url.pathname === THOUGHTS_PATH;
+---
+
+<nav class="flex w-full items-start content-start gap-6 24px flex-wrap">
+	<a
+		href={BASE_PATH}
+		class=`text-4 ${isBase ? "text-primary font-500" : "text-secondary font-300"}`
+		>home</a
+	>
+	<a
+		href={ABOUT_PATH}
+		class=`text-4 ${isAbout ? "text-primary font-500" : "text-secondary font-300"}`
+		>about</a
+	>
+	<a
+		href={PROJECTS_PATH}
+		class=`text-4 ${isProjects ? "text-primary font-500" : "text-secondary font-300"}`
+		>projects</a
+	>
+	<a
+		href={THOUGHTS_PATH}
+		class=`text-4 ${isThoughts ? "text-primary font-500" : "text-secondary font-300"}`
+		>thoughts</a
+	>
+</nav>
