@@ -1,0 +1,25 @@
+---
+import Links from "../../components/Links.astro";
+import ThoughtCard from "../../components/ThoughtCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+	<div class="flex flex-col justify-center items-start gap-6 self-stretch">
+		<h1 class="font-400 text-8">My thoughts</h1>
+
+		<ThoughtCard
+			title="Integrating Gmail SMTP with Cloudflare Email Routing: A Detailed Tutorial"
+			description="Discover how to integrate Gmail SMTP with Cloudflare Email Routing in this detailed tutorial, providing a seamless email experience."
+			date="December 26, 2023"
+			link="/thoughts/post1/"
+		/>
+	</div>
+	<Links />
+
+	<style>
+		* {
+			margin: 0;
+		}
+	</style>
+</BaseLayout>
