@@ -7,6 +7,6 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
 	integrations: [UnoCSS(), mdx()],
 	trailingSlash: "always",
-	site: "https://andrewvota.dev",
+	site: "https://www.vota.cc",
 	output: "static"
 });
