@@ -4,8 +4,6 @@ title: "Exploring Rust: Null Safety"
 date: "January 06, 2024"
 ---
 
-# Exploring Rust: Null Safety
-
 Okay, I've got to admit something. For the longest time, I've been tuning into [Prime](https://twitter.com/theprimeagen)'s stream and YouTube videos, and, despite all the hype, I somehow managed to resist learning Rust. Now that I've finally taken the bait, I can't help but kick myself for not doing it earlier. As someone who juggles everything from web development to low-level programming in my side projects (just for fun and exploration), I've realized I've been missing out. Rust is this unique blend – it's got the nitty-gritty control of a low-level language but with the kind of user-friendly ergonomic features you'd expect from higher-level languages. Let me walk you through what I've learned and why I'm now firmly on the Rust bandwagon.
 
 ### Null Safety: The Crux of Reliable Code
